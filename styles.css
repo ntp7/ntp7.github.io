@@ -22,10 +22,28 @@ body {
   }
 
   header {
-    background: rgb(0, 0, 0);
+    background-image: url(imagekpoint.png);
+    background-size: 100%;
+    background-position: center;
     padding: 0px 0px 20px 20px;
     text-align: center;
     
+  }
+  .features{
+    background: white;
+    color: orange;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .features figure{
+    background: purple;
+    margin: auto;
+    width: 20px;
+  }
+  .feature figure img{
+    border-radius: 50%;
+    width: 20px;
   }
   div {
     background: rgb(255, 196, 0);
@@ -43,7 +61,7 @@ body {
   }
   header .logo a{
     background-image: url("1e6.jpg");
-    background-size: 200px;
+    background-size: 300px;
     background-repeat: no-repeat;
     display: inline-block;
     height: 80px;

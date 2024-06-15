@@ -1,9 +1,9 @@
 body {
     background-color: rgb(88, 88, 88);
-    color: white;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
   .menu{
     position: relative;
@@ -40,6 +40,20 @@ body {
     position: relative;
     top: -30px;
   }
+  section{
+    height: 50vh; /* Full viewport height for demonstration */
+    padding: 20px;
+    border-top: 3px solid #ccc;
+    background-color: rgb(255, 255, 255);
+  }
+  /* .info-1{
+    background-color: white;
+    height: 300px;
+  }
+  .info-2{
+    background-color: rgb(168, 168, 168);
+    height: 300px;
+  } */
   a:hover{
     color: orangered;
   }

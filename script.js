@@ -1,4 +1,4 @@
-    document.querySelectorAll('.navbar a').forEach(anchor => {
+    document.querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             

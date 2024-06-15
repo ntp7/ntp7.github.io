@@ -20,11 +20,19 @@ body {
     display: flex;
     padding: 10px 20px;
     border-radius: 5px;
+  }  
+  @media screen and (max-width:825px){
+    .navbar{
+      display:inline-block;
+      padding: 0px 0px;
+      border-radius: 5px;
+    }
   }
   .navbar a{
     color: rgb(255, 128, 0);
     text-decoration: none;
     padding: 0 50px;
+    text-align: center;
     text-shadow: 
                 0 1px 3px rgba(0, 0, 0, 0.12),
                 0 2px 2px rgba(0, 0, 0, 0.24),
@@ -34,26 +42,49 @@ body {
                 0 6px 1px rgba(0, 0, 0, 0.56),
                 0 7px 1px rgba(0, 0, 0, 0.64);
   }
+  /* RESPONSIVE RULES */
+
   .kpunkts{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-large;
     position: relative;
     top: -30px;
   }
-  section{
-    height: 50vh; /* Full viewport height for demonstration */
-    padding: 20px;
-    border-top: 3px solid #ccc;
+  @media screen and (max-width:825px){
+    .kpunkts{
+      top: -10px;
+    }
+  }
+  .section{
+    display: flex;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
   }
-  /* .info-1{
-    background-color: white;
-    height: 300px;
-  }
-  .info-2{
-    background-color: rgb(168, 168, 168);
-    height: 300px;
-  } */
   a:hover{
     color: orangered;
   }
+  .teksts{
+    margin: 0 20px;
+    text-align: justify;
+  }
+  .bilde{
+    width: auto;
+    height: 300px;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 10%;
+  }
+  .par{
+    display: flex;
+    color:white;
+    height: 50vh;
+    background-color: rgb(152, 152, 152);
+    justify-content: center;
+    align-items: center;
+  }
+  .sadala{
+    margin: 10px;
+    padding: 10px;
+  }
+
+

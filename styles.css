@@ -52,6 +52,10 @@
     position: relative;
     top: -30px;
   }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
   @media screen and (max-width:825px){
     .kpunkts{
       top: -10px;
@@ -59,7 +63,7 @@
   }
   .section{
     display: flex;
-    height: 50vh;
+    height: auto;
     background-color: rgb(255, 255, 255);
   }
   a:hover{
@@ -73,7 +77,7 @@
     width: auto;
     height: 300px;
     padding: 0;
-    margin: 0 10px;
+    margin: 10px 10px;
     border-radius: 10%;
   }
   .par{

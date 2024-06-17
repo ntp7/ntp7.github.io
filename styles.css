@@ -1,11 +1,12 @@
   *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   ul{
-
+    text-align: center;
   }
   ul li{
     list-style: none;
@@ -19,74 +20,35 @@
     padding: 0 50px;
     font-size: 20px;
     font-weight: bold;
-    
   }
-  .menu{
+  .logoleft, .logoright{
+    height: auto;
+    width: 50px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
     background-color: black;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
   }
   a:hover{
     color: orangered;
     background-color: rgb(52, 52, 52);
   }
-  .navbar{
-    display: flex;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }  
-  @media screen and (max-width:825px){
-    .navbar{
-      display:inline-block;
-      padding: 0px 0px;
-      border-radius: 5px;
+  @media screen and (max-width:1270px) {
+    .logoleft, .logoright{
+      display: none;
     }
-  }
-  .content{
-    display: flex;
-    flex-direction: column;
-  }
-  @media screen and (max-width:825px){
-    .kpunkts{
-      top: -10px;
-    }
-  }
-  .section{
-    display: flex;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
-  @media screen and (max-width:825px) {
-      .section{
-        display: block;
-      }
-  }
-  .teksts{
-    margin: 0 20px;
-    text-align: justify;
-    display: inline-block;
-  }
-  .bilde{
-    width: auto;
-    height: 300px;
-    padding: 0;
-    margin: 10px 10px;
-    border-radius: 10%;
-  }
-  .par{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.813);
-    background-color: rgb(14, 14, 35);
-    font-size: smaller;
-    font-family:Arial, Helvetica, sans-serif;
-  }
-  .sadala{
-    text-align: left;
-    padding: 0 50px 0 50px;
   }
 
 

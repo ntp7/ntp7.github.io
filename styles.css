@@ -23,6 +23,9 @@
     justify-content: space-between;
     padding: 0 20px;
   }
+  .close a svg{
+    display: block;
+  }
   .sidebar {
     position: fixed;
     top: 0;
@@ -30,7 +33,7 @@
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(108, 108, 108, 0.571);
+    background-color: rgba(0, 0, 0, 0.721);
     backdrop-filter: blur(10px);
     box-shadow:  -10px 0 10px rgba(0,0,0,0.1);
     display: none;
@@ -38,19 +41,28 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+  @media screen and (max-width:412px) {
+    .sidebar{
+      width: 100%;
+    }
+  }
   .sidebar ul li{
     display: inline-block;
     line-height: 60px;
     width: 100%;
   }
   .sidebar ul li a{
+    padding: 0 0 0 50px;
     width: 100%;
     display: block;
     color: rgb(255, 128, 0);
     text-decoration: none;
-    padding: 0 50px;
     font-size: 20px;
     font-weight: bold;
+  }
+  .sidebar a:hover{
+    color: orangered;
+    background-color: rgb(52, 52, 52);
   }
   .nav-bar li{
     display: none;

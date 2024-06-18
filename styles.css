@@ -5,15 +5,46 @@
     margin: 0;
     padding: 0;
   }
-  ul{
-    text-align: center;
+
+  /* header */
+  .header{
+    display: none;
   }
-  ul li{
-    list-style: none;
+
+  /* Navigation Bar */
+  .phone-bar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(108, 108, 108, 0.571);
+    backdrop-filter: blur(10px);
+    box-shadow:  -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar ul li{
     display: inline-block;
     line-height: 60px;
+    width: 100%;
   }
-  ul li a{
+  .sidebar ul li a{
+    width: 100%;
     display: block;
     color: rgb(255, 128, 0);
     text-decoration: none;
@@ -21,44 +52,73 @@
     font-size: 20px;
     font-weight: bold;
   }
-  .logoleft, .logoright{
-    height: 100%;
-    width: 60px;
-  }
-  .menu {
-    display: flex;
-  }
-  .header{
+  .nav-bar li{
     display: none;
   }
-  .nav-bar{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /*important*/
-    padding: 0 20px;
+  .nav-bar li a{
+    display: none;
   }
-  a:hover{
-    color: orangered;
-    background-color: rgb(52, 52, 52);
+  .navbar{
+    display: none;
   }
   @media screen and (max-width:1270px) {
     .logoleft, .logoright{
       display: none;
     }
   }
+  @media screen and (min-width:740px){
+    .nav-bar{
+      display: flex;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      }
+      .nav-bar ul li{
+        list-style: none;
+        display: inline-block;
+        line-height: 60px;
+      }
+      .nav-bar ul li a{
+        display: block;
+        color: rgb(255, 128, 0);
+        text-decoration: none;
+        padding: 0 50px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .nav-bar a:hover{
+      color: orangered;
+      background-color: rgb(52, 52, 52);
+      }
+      .logoleft, .logoright{
+        height: 100%;
+        width: 60px;
+      }
+      .sidebar{
+        display: none;
+      }
+      .phone-bar{
+        display: none;
+      }
+  }
+
   .dropdown{
     display: none;
   }
+
+  /* Video looping */
   .video img{
     object-fit: cover;
     width: 100%;
     height: 50vh;
     z-index: -1;
   }
+
+  /* Sekcija */
   .notikums{
     background: gray;
     display: flex;
@@ -69,8 +129,14 @@
     width: 100%;
     height: 30vh;
   }
+
   .noda{
+    width: 20%;
     display: flex;
+    justify-content: space-evenly;
+  }
+  .noda div{
+    padding: 15px;
   }
   button {
     display: block;

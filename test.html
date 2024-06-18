@@ -1,90 +1,83 @@
-  .navbar a{
-    color: rgb(255, 128, 0);
-    text-decoration: none;
-    padding: 0 50px;
-    text-align: center;
-    text-shadow: 
-                0 1px 3px rgba(0, 0, 0, 0.12),
-                0 2px 2px rgba(0, 0, 0, 0.24),
-                0 3px 1px rgba(0, 0, 0, 0.32),
-                0 4px 1px rgba(0, 0, 0, 0.40),
-                0 5px 1px rgba(0, 0, 0, 0.48),
-                0 6px 1px rgba(0, 0, 0, 0.56),
-                0 7px 1px rgba(0, 0, 0, 0.64);
-  }
-  /* RESPONSIVE RULES */
-
-  .kpunkts{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    position: relative;
-    top: -30px;
-  }
-
-
-
-<div class="content">
-<div id="info-1" class="section" class="info-1" >
-  <img class="bilde" src="images/smaids.jpg">
-  <div class="teksts">
-      <h1>Random raksts</h1>
-      <div>Lorem Ipsum is simply dummy text of the printing and 
-        typesetting industry. Lorem Ipsum has been the industry's 
-        standard dummy text ever since the 1500s, when an unknown 
-        printer took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five centuries, 
-        but also the leap into electronic typesetting, remaining 
-        essentially unchanged. It was popularised in the 1960s 
-        with the release of Letraset sheets containing 
-        Lorem Ipsum passages, and more recently with desktop 
-        publishing software like Aldus PageMaker including versions 
-        of Lorem Ipsum.</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Boxes Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .info-box {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .info-box h2 {
+            margin-top: 0;
+        }
+        .info-box p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .info-box button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .info-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Info Page</h1>
+        <section class="info-section">
+            <div class="info-box">
+                <h2>Info Box 1</h2>
+                <p>This is the content of the first info box. Here you can add some information.</p>
+                <button>Read More</button>
+            </div>
+            <div class="info-box">
+                <h2>Info Box 2</h2>
+                <p>This is the content of the second info box. Here you can add some information.</p>
+                <button>Read More</button>
+            </div>
+            <div class="info-box">
+                <h2>Info Box 3</h2>
+                <p>This is the content of the third info box. Here you can add some information.</p>
+                <button>Read More</button>
+            </div>
+        </section>
     </div>
-</div>
-
-<div id="info-2" class="section" class="info-2" >
-  <div class="teksts">      
-    <h1>Kur rodas sportisti?</h1>
-    <div>Lorem Ipsum is simply dummy text of the printing and 
-      typesetting industry. Lorem Ipsum has been the industry's 
-      standard dummy text ever since the 1500s, when an unknown 
-      printer took a galley of type and scrambled it to make a type 
-      specimen book. It has survived not only five centuries, 
-      but also the leap into electronic typesetting, remaining 
-      essentially unchanged. It was popularised in the 1960s 
-      with the release of Letraset sheets containing 
-      Lorem Ipsum passages, and more recently with desktop 
-      publishing software like Aldus PageMaker including versions 
-      of Lorem Ipsum.</div>
-  </div>
-  <img class="bilde" src="images/gg.png">
-</div>
-</div>
-
-<div id="about" class="par">
-  <div class="sadala" class="contacts" >
-    <h1>KONTAKTI</h1>
-    <p>Ceļojumu un orientēšanās klubs "Silva" "Sveikuļi",</p>
-    <p>Tumes pagasts, Tukuma novads, LV-3139</p>
-      <p>MReģ. Nr. 40008061499,</p>
-      <p>Mmob. tālr. 29232026</p>
-      <p>Me-pasts evita.freimane@gmail.com</p>
-      <p>MBanka: A/S Swedbank</p>
-      <p>MKonts: LV63HABA0551005150747</p>
-  </div>
-  <div class="sadala" class="partneri" >
-    <h1>SADARBIBAS PARTNERI</h1>
-    <p>Atpūtas komplekss “Sveikuļi”</p>
-    <p>Mēs dzīvojam zaļi</p>
-    <p>Latvijas orientēšanās federācija</p>
-    <p>Tukuma tūrisma informacijas centrs</p>
-  </div>
-  <div class="sadala" class="iesakam" >
-    <h1>IESAKAM</h1>
-    <p>Orientēšanās Dobeles pusē</p>
-    <p>Orientēšanās Saldus pusē</p>
-    <p>Taku skrējiens “Stirnubuks”</p>
-    <p>Rogainings Latvijā</p>
-    <p>Orientēšanās Talsu pusē</p>
-  </div>
-</div>
+</body>
+</html>

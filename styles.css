@@ -98,13 +98,14 @@
       padding: 0 20px;
       }
       .nav-bar ul li{
+        position: relative;
         list-style: none;
         display: inline-block;
         line-height: 50px;
       }
       .nav-bar ul li a{
         display: block;
-        color: rgb(255, 128, 0);
+        color: #ff8000;
         text-decoration: none;
         padding: 0 50px;
         font-size: 20px;
@@ -112,7 +113,7 @@
         height: 70px;
       }
       .nav-bar a:hover{
-      color: orangered;
+      color: rgb(255, 68, 0);
       background: linear-gradient(180deg, rgb(44, 44, 44) 52%, rgba(0,0,0,0) 100%);
       }
       .logoleft, .logoright{
@@ -125,11 +126,64 @@
       .phone-bar{
         display: none;
       }
+     .nav-bar svg a.nav-bar:hover{
+        rotate: 180deg;
+      }
   }
-
   .dropdown{
     display: none;
   }
+  li.dr:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: black;
+  }
+  /* .dropdown li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    line-height: 20px;
+  }
+  .dropdown a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    width: auto;
+  } */
+  li.dr:hover{
+    background-color: black;
+  }
+  /* ul li:hover ul.dropdown{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: rgb(0, 0, 0);
+  }
+  ul.dropdown li a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    width: auto;
+  }
+  ul.dropdown li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    line-height: 20px;
+  }
+  .dropdown a:hover{
+    color: orangered;
+    background: rgb(44, 44, 44) 52%;
+  } */
+
 
   /* Video looping */
   .video{
@@ -141,7 +195,7 @@
   }
   .video video{
     position: relative;
-    opacity: 0.8;
+    opacity: .9;
     height: 80vh;
     top: -35px;
     z-index: -1;
@@ -151,10 +205,10 @@
   .notikums{
     background: rgba(118, 118, 255, 0.459);
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
     height: auto;
     width: 100%;
+    justify-content: space-evenly;
   }
   @media screen and (max-width:810px) {
     .notikums{
@@ -162,14 +216,16 @@
     }
   }
   .sekcija1{
-
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .nosaukums{
-    margin: 0 80px 80px 0;
+    top: 0;
+    left: 0;
   }  
   .pieteiksanas{
-    margin: 0 0 0 50px;
+    
   }
   .sekcija2{
     display: flex;

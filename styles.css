@@ -79,12 +79,12 @@
     display: none;
   }
 
-  @media screen and (max-width:1290px) {
+  @media screen and (max-width:1365px) {
     .logoleft, .logoright{
       display: none;
     }
   }
-  @media screen and (min-width:1170px){
+  @media screen and (min-width:1248px){
     .nav-bar{
       display: flex;
       position: absolute;
@@ -156,18 +156,18 @@
       a.fa-instagram:hover{
         color: rgb(217, 255, 0);
       }
-      .lang{
+      .language{
         display: block;
         padding: 10px 0 0 700px;
         font-weight: bold;
         list-style: none;
       }
-      .lang a{
+      .language a{
         padding: 0 15px;
         color: orange;
         text-decoration: none;
       }
-      .lang a:hover{
+      .language a:hover{
         color: rgb(255, 68, 0);
       }
   }

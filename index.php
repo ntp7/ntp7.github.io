@@ -13,13 +13,16 @@
 <body>
 <?php include 'header.html'; ?>
 
-  
-<section class="video">
-  <video autoplay muted loop id="myVideo">
-    <source src="images/lowbit.mp4" type="video/mp4">
-  </video>
-</section>
 <main>
+
+<section class="video">
+<div class="raksts">
+    <h1>Kpunkts</h1>
+    <div class="line"></div>
+    <h2>Rogainingi. Pārgājieni. Un pārējais...</h2>
+  </div>
+  <video src="images/DJI2.mp4" muted loop autoplay></video>
+</section>
 
 <section class="notikums">
   <div class="sekcija1">

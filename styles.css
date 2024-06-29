@@ -316,6 +316,18 @@ button:hover {
     transform: translateY(-2px);
 }
 
+/* Blogs */
+.blog {
+  width: 100%;
+  height: 100vh; /* Fixed height */
+  border: 1px solid #ccc; /* Optional border */
+}
+.blog iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 
 

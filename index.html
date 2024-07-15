@@ -11,21 +11,23 @@
 </head>
 
 <body>
+<special-header></special-header>
 
-  <?php include 'header.html';?>
-  
-<section class="video">
-  <video autoplay muted loop id="myVideo">
-    <source src="images/lowbit.mp4" type="video/mp4">
-  </video>
-</section>
 <main>
+<section class="video">
+<div class="raksts">
+    <h1>Kpunkts</h1>
+    <div class="line"></div>
+    <h2>Rogainingi. Pārgājieni. Un pārējais...</h2>
+  </div>
+  <video src="images/DJI2.mp4" muted loop autoplay></video>
+</section>
 
 <section class="notikums">
   <div class="sekcija1">
     <div class="nosaukums"><h1>Bajāru Rogainings</h1>
     2024.gada 15.augusts</div>
-    <div class="pieteiksanas"><button>Piesakies</button></div>
+    <div class="pieteiksanas" ><button onclick="window.location.href='pieteiksanas.html';">Piesakies</button></div>
   </div>
   <div class="sekcija2">
     <img src="images/black.png">
@@ -35,7 +37,10 @@
     <div class="dalibnieki"><button>Dalībnieki</button></div>
   </div>
 </section>
-
 </main>
+
+<footer>
+  
+</footer>
 </body>
 </html>

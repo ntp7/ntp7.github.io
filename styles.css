@@ -222,7 +222,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(185, 206, 145);
+    background-color: rgb(255, 253, 122);
   }
   .video video{
     opacity: .9;
@@ -261,15 +261,12 @@
     width: 100%;
     justify-content: space-evenly;
   }
-  @media screen and (max-width:810px) {
-    .notikums{
-      display: block;
-    }
-  }
   .sekcija1{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: 40vh;
   }
   .nosaukums{
     top: 0;
@@ -280,10 +277,11 @@
     /* width: 40%; */
     justify-content: center;
     align-items: center;
+    height: 40vh;
   }
   .sekcija2 img{
     width: auto;
-    height: 40vh;
+    height: 100%;
   }
   .sekcija3{
     /* width: 30%; */
@@ -295,7 +293,9 @@
   .sekcija3 div{
     padding: 0 15px;
   }
-
+  @media screen and (max-width:940px) {
+    
+  }
   button {
     display: block;
     width: auto;
@@ -327,7 +327,11 @@ button:hover {
   height: 100%;
   border: none;
 }
-
+/* footer */
+footer{
+  height: 40vh;
+  background: black;
+}
 
 
 

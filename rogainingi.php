@@ -11,8 +11,7 @@
 </head>
 
 <body>
-
-  <special-header></special-header>
+<?php include 'header.html';?>
   
 <section class="video">
   <video autoplay muted loop id="myVideo">

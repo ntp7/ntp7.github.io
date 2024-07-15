@@ -11,18 +11,15 @@
 </head>
 
 <body>
-<special-header></special-header>
 
-<main>
-
+  <?php include 'header.html';?>
+  
 <section class="video">
-<div class="raksts">
-    <h1>Kpunkts</h1>
-    <div class="line"></div>
-    <h2>Rogainingi. Pārgājieni. Un pārējais...</h2>
-  </div>
-  <video src="images/DJI2.mp4" muted loop autoplay></video>
+  <video autoplay muted loop id="myVideo">
+    <source src="images/lowbit.mp4" type="video/mp4">
+  </video>
 </section>
+<main>
 
 <section class="notikums">
   <div class="sekcija1">
@@ -39,13 +36,6 @@
   </div>
 </section>
 
-<section class="blog">
-  <iframe src="https://elinakremere.wixsite.com/blogs/blogs" title="Example"></iframe>
-</section>
-
 </main>
-<footer>
-  
-</footer>
 </body>
 </html>

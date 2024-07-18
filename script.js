@@ -10,7 +10,6 @@ function hideSidebar(){
 }
 
 
-
 class SpecialHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
